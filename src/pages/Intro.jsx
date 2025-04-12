@@ -4,7 +4,7 @@ const Intro = (props) => {
   return (
     <>
     <div className='txtCenter'>
-        <img src='/titleImage.png'/>
+        <img src='/titleImage.png' className='myImage'/>
     </div>
     </>
   )

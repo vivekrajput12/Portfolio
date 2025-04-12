@@ -42,7 +42,51 @@ nav {
     right: 0;
     z-index: 2;
     top: 0;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
     line-height: 49px;
     height: 100vh;
-    padding: 70px 169px;
+    padding: 70px 249px 70px 69px;
+    transform: translate(calc(100% + 6vw),0) rotate(0.001deg);
+    transition: transform 0.8s cubic-bezier(.7, 0, .2, 1), border-radius 0.8s ease;
+    border-top-left-radius: 110%;
+    border-bottom-left-radius: 153%;
+    background: #1b1b1b;
+    .displayFlex{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 75vh;
+    }
+    .navigation{
+        font-size: 14px;
+        border-bottom: 1px solid;
+        margin-bottom: 15%;
+    }
+    .item{
+        padding: 20px 0;
+        position: relative;
+        font-size: 50px;
+        &:hover{
+            &::before{
+                content: '.';
+                position: absolute;
+                left: -27px;
+                top: 8px;
+             }
+        }
+       
+    }
+    &.active{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        transform: translate(0,0) rotate(0.001deg);
+        transition: border-radius .8 ease;
+    }
+}
+@media screen and (max-width:450px) {
+    nav {
+    padding: 35px 15px;
+    .rightArea{
+        gap: 8px;
+    }
+}
 }

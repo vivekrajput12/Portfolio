@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import './media/navBar.css'
 import './media/common.css'
+import './media/intro.css'
 import { BrowserRouter, Route, Routes } from "react-router";
 import MainPage from './pages';
 
