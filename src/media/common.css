@@ -1,0 +1,16 @@
+.fitContent{
+    width: fit-content;
+}
+.displayFlex{
+    display: flex;
+}
+.flexCenterAlign{
+    align-items: center;
+    justify-content: center;
+}
+.flexSpaceBetween{
+    justify-content: space-between;
+}
+.txtCenter{
+    text-align: center;
+}

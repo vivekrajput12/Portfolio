@@ -1,0 +1,48 @@
+nav {
+    padding: 40px;
+    div{
+        width: fit-content;
+    }
+    .rightArea{
+        gap: 65px;
+    }
+}
+.navBarLine{
+    position: fixed;
+    right: 40px;
+    background: #d1c9c9;
+    top: 40px;
+    padding: 20px;
+    z-index: 3;
+    border-radius: 69px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease, transform 0.4s ease;
+    .menuImg{
+        width: 50px;
+        height: 50px;
+        &:hover{
+            transform: rotate(180deg);
+            transition: 0.8s ease;
+        }
+    }
+    &.active{
+        /* display: block; */
+        transition: 0.8s ease;
+        opacity: 1;
+        transform: scale(1);
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(93, 93, 164);
+        }
+    }
+}
+.rightSideBarMenu{
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    top: 0;
+    line-height: 49px;
+    height: 100vh;
+    padding: 70px 169px;
+}
