@@ -64,13 +64,13 @@ const Navbar = (props) => {
   return (
     <>
         <nav className='displayFlex flexSpaceBetween'>
-            <div>
-                <span>Code by Vivek</span>
+            <div className='overflowHidden'>
+                <div className='nameContainer'>&copy; Code by Vivek Gaur</div>
             </div>
             <div className='displayFlex rightArea'>
-                <div>Work</div>
-                <div>About</div>
-                <div>Contact</div>
+                <div className='navItem'>Work</div>
+                <div className='navItem'>About</div>
+                <div className='navItem'>Contact</div>
             </div>
         </nav>
         <div

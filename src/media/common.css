@@ -4,6 +4,9 @@
 .displayFlex{
     display: flex;
 }
+.alignItemCenter{
+    align-items: center;
+}
 .flexCenterAlign{
     align-items: center;
     justify-content: center;
@@ -16,4 +19,19 @@
 }
 .pLeft20{
     padding-left: 20px;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+.blackTxt{
+    color: black;
+}
+.posRelative{
+    position: relative;
+}
+.w70Percent{
+    width: 70%;
+}
+.w30Percent{
+    width: 30%;
 }

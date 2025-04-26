@@ -6,6 +6,18 @@ nav {
     .rightArea{
         gap: 65px;
     }
+    .nameContainer{
+        width: 122px;
+        white-space: nowrap;
+        transition: transform 0.3s ease-in-out;
+        &:hover{
+            transform: translateX(-75px);
+        }
+    }
+    .navItem{
+        cursor: pointer;
+        font-size: 18px;
+    }
 }
 .navBarLine{
     position: fixed;
