@@ -64,7 +64,7 @@ const Intro = (props) => {
           </div>
         </div>
       </div>
-      <div className='aboutUsOnIntro'>
+      <div className='aboutUsOnIntro nonSelectable'>
         <div className='displayFlex flexSpaceBetween'>
           <div className='myIntro fade-text'>
             <span>Building scalable software that powers the future.

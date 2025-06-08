@@ -52,6 +52,6 @@ body {
 }
 
 .nonSelectable {
-  user-select: none;
+  user-select: none !important;
   -webkit-user-select: none;
 }
