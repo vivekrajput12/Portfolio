@@ -8,6 +8,8 @@ const Navbar = (props) => {
     const ref = useRef(null)
     const rightSideBarItemRef = useRef(null)
     const handleMouseEnter = (e) => {
+        console.log("window.innerWidth ",window.innerWidth)
+        if (window.innerWidth <= 1200) return;
         if (rect) {
             const x = e.clientX - rect.left -30;
             const y = e.clientY - rect.top - 20;
@@ -15,9 +17,11 @@ const Navbar = (props) => {
         }
     }
     const handleMouseLeave = () => {
+        if (window.innerWidth <= 1200) return;
         ref.current.style.transform = 'translate(0, 0)';
     }
     const handleItemMouseMove = (e,xDir) => {
+        if (window.innerWidth <= 1200) return;
         const item = e.currentTarget;
         const bounds = item.getBoundingClientRect();
         let y = e.clientY - bounds.top

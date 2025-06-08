@@ -101,7 +101,10 @@ nav {
     .rightArea{
         gap: 8px;
     }
-}
+    }
+    .navBarLine{
+        right: 17px;
+    }
     .rightSideBarMenu{
         padding: 70px 85px 107px 69px;
     }
