@@ -13,6 +13,7 @@
             border-bottom-right-radius: 50px;
             .locationText{
                 padding-left: 40px;
+                font-weight: 600;
             }
             &.displayFlex{
                 gap: 30px;
@@ -21,6 +22,7 @@
         .globe{
             width: 51px;
             rotate: 20deg;
+            margin-top: 6px;
         }
         .role{
             padding-right: 40px;
@@ -35,6 +37,7 @@
         .biggerName {
             position: relative;
             width: 970px;
+            border-radius: 158px;
             &::before,
             &::after {
               content: '';
@@ -65,7 +68,6 @@
 .aboutUsOnIntro{
     .displayFlex{
         padding: 250px 129px;
-        /* gap: 130px; */
         margin: auto;
         max-width: 1500px;
     }
@@ -79,4 +81,44 @@
         line-height: 26px;
         width: 300px;
     }
+}
+@media screen and (max-width:1208px) {
+    .aboutUsOnIntro{
+        .displayFlex{
+            padding: 132px 30px;
+            gap: 100px;
+        }
+        .myIntro{
+            width: 60%;
+        }
+        .passion{
+            width: 40%;
+        }
+    }
+}
+@media screen and (max-width:450px){
+    .aboutUsOnIntro{
+        .displayFlex{
+            flex-direction: column;
+            padding: 38px 20px;
+            gap: 30px;
+        }
+        .myIntro,.passion{
+            width: unset;
+        }
+    }
+    .myBannerContainer {
+        .location {
+            padding-top: 0;
+            .role {
+                padding-right: 17px;
+                font-size: 4vw;
+                }
+            .locationContent{
+                .locationText{
+                padding-left: 16px;
+             }
+            }
+        }
+  }
 }

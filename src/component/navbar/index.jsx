@@ -26,7 +26,6 @@ const Navbar = (props) => {
         if(xDir) y = x
         const offset = (y - mid) / mid * 5;
         if(xDir){
-            console.log(">>>>>>>>",offset)
             item.style.transform = `translateX(${offset}px)`;
         } else{
         item.style.transform = `translateY(${offset}px)`;
@@ -58,7 +57,6 @@ const Navbar = (props) => {
         };
     }, []);    
     const handleNavBarLineClick = ()=>{
-        console.log("casd")
         setOpenSideBar(!openRigthSideBar)
     }
   return (

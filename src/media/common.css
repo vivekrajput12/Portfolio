@@ -35,3 +35,15 @@
 .w30Percent{
     width: 30%;
 }
+.fade-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  visibility: hidden;
+}
+
+.fade-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}

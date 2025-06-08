@@ -56,8 +56,9 @@ nav {
     top: 0;
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.5);
     line-height: 49px;
-    height: 100vh;
-    padding: 70px 249px 70px 69px;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 70px 249px 107px 69px;
     transform: translate(calc(100% + 6vw),0) rotate(0.001deg);
     transition: transform 0.8s cubic-bezier(.7, 0, .2, 1), border-radius 0.8s ease;
     border-top-left-radius: 110%;
@@ -66,7 +67,7 @@ nav {
     .displayFlex{
         flex-direction: column;
         justify-content: space-between;
-        height: 75vh;
+        height: 100%;
     }
     .navigation{
         font-size: 14px;
@@ -101,4 +102,7 @@ nav {
         gap: 8px;
     }
 }
+    .rightSideBarMenu{
+        padding: 70px 85px 107px 69px;
+    }
 }
