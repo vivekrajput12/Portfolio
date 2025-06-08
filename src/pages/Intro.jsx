@@ -41,7 +41,7 @@ const Intro = (props) => {
   }, []);
   return (
     <>
-      <div className='myBannerContainer posRelative'>
+      <div className='myBannerContainer posRelative nonSelectable'>
         <div className='location displayFlex alignItemCenter flexSpaceBetween'>
           <div className='displayFlex locationContent'>
             <div className='locationText fitContent'>
